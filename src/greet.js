@@ -1,7 +1,7 @@
 
-
-function greet(name){
+export class Main {
+     greet(name){
     return "Hello,"+name;
 }
 
-greet('bob');
+}
