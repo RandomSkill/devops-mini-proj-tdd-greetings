@@ -1,5 +1,5 @@
-console.log("merde");
 
-function bob(){
-    return "bob";
+
+function bob(name){
+    return "Hello,"+name;
 }module.exports =bob;
