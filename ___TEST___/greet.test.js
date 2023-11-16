@@ -27,3 +27,11 @@ test("when name is an array with more than two names", () => {
 test("when name is an array with a mix of normal and uppercase names", () => {
     expect(greet(["Amy", "BRIAN", "Charlotte"])).toBe("Hello, Amy, BRIAN, and Charlotte.");
 });
+
+test("when Language is set to french", () => {
+    expect(greet(["Amy", "BRIAN", "Charlotte"],"FR")).toBe("Bonjour, Amy, BRIAN, et Charlotte.");
+});
+test("when Language is set to Ndls", () => {
+    expect(greet("","ND")).toBe("Hallo, mijn vriend.");
+    expect(greet(["Alex", "David", "Eva", "Frank"],"ND")).toBe("Hallo, Alex, David, Eva, en Frank.");
+});
