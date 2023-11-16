@@ -10,3 +10,7 @@ test("Gérer les valeurs nulles, undefined et vide", () => {
     expect(greet(undefined)).toBe("Hello, my friend.");
     expect(greet("")).toBe("Hello, my friend.");
 });
+
+test("when name is in uppercase", () => {
+    expect(greet("BOB")).toBe("HELLO, BOB!");
+});

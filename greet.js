@@ -1,8 +1,13 @@
 
 function greet(name) {
-    if (!name || (typeof name === 'string' && name.trim() === '')||name ===null) {
+    if (!name || name.trim() === '') {
         return "Hello, my friend.";
     }
+
+    if (name === name.toUpperCase()) {
+        return "HELLO, " + name + "!";
+    }
+
     return "Hello, " + name + ".";
 }
 
