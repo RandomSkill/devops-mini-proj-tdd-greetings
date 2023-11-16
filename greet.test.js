@@ -17,7 +17,11 @@ const greet = require('./greet');
             expect(greet('')).toBe("Hello, my friend.");
         });
    
-        test("when name is 'francois' and lang is FR ",()=> {
+    test("when name is 'francois' and lang is FR ",()=> {
        
             expect(greet('Francois',"FR")).toBe("bonjour, Francois.");
+        });
+
+        test("when name is 'FRANCOIS'",()=> {
+            expect(greet('FRANCOIS')).toBe("HELLO, FRANCOIS!");
         });
