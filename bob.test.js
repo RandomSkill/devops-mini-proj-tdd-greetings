@@ -1,4 +1,4 @@
-const { describe } = require('yargs');
+
 const bob = require('./bob');
 
 
@@ -11,7 +11,10 @@ const bob = require('./bob');
 
    test("when name is '' ",()=> {
        
-            expect(bob('')).toBe("hello,myfriend");
+            expect(bob('')).toBe("Hello, my friend.");
         });
    
-   
+        test("when name is 'francois' and lang is FR ",()=> {
+       
+            expect(bob('Francois',"FR")).toBe("bonjour,Francois");
+        });
