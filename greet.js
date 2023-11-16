@@ -7,6 +7,9 @@ function greet(names) {
     if (Array.isArray(names)) {
         if (names.length === 2) {
             return "Hello, " + names[0] + " and " + names[1] + ".";
+        } else if (names.length > 2) {
+            const formattedNames = names.slice(0, -1).join(', ') + ", and " + names.slice(-1);
+            return "Hello, " + formattedNames + ".";
         }
     }
 
@@ -16,6 +19,7 @@ function greet(names) {
 
     return "Hello, " + names + ".";
 }
+
 
 
 
