@@ -6,7 +6,7 @@ function greet(name, _lang) {
 
   switch (l) {
     case "NL":
-     return hallo;
+     return hallo(name);
       break;
     case "FR":
       return bonjour(name);
