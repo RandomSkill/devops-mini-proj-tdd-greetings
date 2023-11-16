@@ -2,9 +2,9 @@
   "name": "devops-mini-proj-tdd-greetings",
   "version": "1.0.0",
   "description": "",
-  "main": "bob.js",
+  "main": "greet.js",
   "scripts": {
-      "start": "nodemon ./src/bob.js",
+      "start": "nodemon ./src/greet.js",
       "test": "jest --watch",
       "lint": "eslint ./src/**",
       "lint:fix": "eslint --fix ./src/**",
