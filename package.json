@@ -4,12 +4,12 @@
   "description": "",
   "main": "greet.js",
   "scripts": {
-      "start": "nodemon ./src/greet.js",
+      "start": "nodemon ./greet.js",
       "test": "jest --watch",
-      "lint": "eslint ./src/**",
-      "lint:fix": "eslint --fix ./src/**",
-      "prettier": "prettier ./src/** --check",
-      "prettier:fix": "prettier ./src/** --write",
+      "lint": "eslint ./*.js",
+      "lint:fix": "eslint --fix ./*.js",
+      "prettier": "prettier ./*.js --check",
+      "prettier:fix": "prettier ./*.js --write",
       "list": "ls -la"
   },
   "author": "",
