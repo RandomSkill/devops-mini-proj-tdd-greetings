@@ -18,3 +18,8 @@ test("when name is in uppercase", () => {
 test("when name is an array of two names", () => {
     expect(greet(["Jill", "Jane"])).toBe("Hello, Jill and Jane.");
 });
+
+test("when name is an array with more than two names", () => {
+    expect(greet(["Amy", "Brian", "Charlotte"])).toBe("Hello, Amy, Brian, and Charlotte.");
+    expect(greet(["Alex", "David", "Eva", "Frank"])).toBe("Hello, Alex, David, Eva, and Frank.");
+});
