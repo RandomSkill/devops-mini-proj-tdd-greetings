@@ -1,5 +1,5 @@
 
-const greet = require('./greet');
+const greet = require('../greet');
 
 test("Saluer une personne", () => {
     expect(greet("Bob")).toBe("Hello, Bob.");
@@ -22,4 +22,8 @@ test("when name is an array of two names", () => {
 test("when name is an array with more than two names", () => {
     expect(greet(["Amy", "Brian", "Charlotte"])).toBe("Hello, Amy, Brian, and Charlotte.");
     expect(greet(["Alex", "David", "Eva", "Frank"])).toBe("Hello, Alex, David, Eva, and Frank.");
+});
+
+test("when name is an array with a mix of normal and uppercase names", () => {
+    expect(greet(["Amy", "BRIAN", "Charlotte"])).toBe("Hello, Amy, BRIAN, and Charlotte.");
 });
