@@ -14,3 +14,7 @@ test("Gérer les valeurs nulles, undefined et vide", () => {
 test("when name is in uppercase", () => {
     expect(greet("BOB")).toBe("HELLO, BOB!");
 });
+
+test("when name is an array of two names", () => {
+    expect(greet(["Jill", "Jane"])).toBe("Hello, Jill and Jane.");
+});
