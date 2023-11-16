@@ -6,7 +6,19 @@ function greet(name, _lang) {
 
   switch (l) {
     case "NL":
-      if (!name || (typeof name === "string" && name.trim() === "")) {
+     return hallo;
+      break;
+    case "FR":
+      return bonjour(name);
+      break;
+    default:
+        return hello(name);
+      
+  }
+}
+
+function hallo(name){
+    if (!name || (typeof name === "string" && name.trim() === "")) {
         return "Hallo, mijn vriend.";
       }
       if (name === name.toUpperCase()) {
@@ -14,19 +26,22 @@ function greet(name, _lang) {
       } else {
         return "Hallo, " + name + ".";
       }
-      break;
-    case "FR":
-      if (!name || (typeof name === "string" && name.trim() === "")) {
+}
+
+function bonjour(n) {
+    if (!n || (typeof n === "string" && n.trim() === "")) {
         return "bonjour, mon ami.";
       }
-      if (name === name.toUpperCase()) {
-        return "BONJOUR, " + name + "!";
+
+    if (n === n.toUpperCase()) {
+        return "BONJOUR, " + n + "!";
       } else {
-      return "bonjour, " + name + ".";
-      }
-      break;
-    default:
-      if (!name || (typeof name === "string" && name.trim() === "")) {
+      return "bonjour, " + n + ".";
+      }   
+};
+
+function hello(name){
+    if (!name || (typeof name === "string" && name.trim() === "")) {
         return "Hello, my friend.";
       }
       if (name === name.toUpperCase()) {
@@ -34,7 +49,5 @@ function greet(name, _lang) {
       } else {
       return "Hello, " + name + ".";
       }
-  }
-}
-
+};
 module.exports = greet;
